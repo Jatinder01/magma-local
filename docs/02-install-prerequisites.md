@@ -37,5 +37,5 @@ helm install postgresql bitnami/postgresql \
 
 update schema for magma:
 ```bash
-kubectl exec -it mysql-0 -- mysql -u root --password=password < db_setup.sql
+kubectl exec -t mysql-0 -- mysql -u root --password=password < db_setup.sql
 ```
